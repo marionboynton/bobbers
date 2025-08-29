@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Global Bobspots</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 20px 0;
+    }
+
+    .map-container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto 40px auto;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: 0;
+    }
+
+    .header {
+        display: flex;
+      justify-content: flex-end; /* aligns button to the right */
+      padding: 16px;
+      background-color: #f2f2f2;
+      position: fixed; /* keeps it at the top even when scrolling */
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1000; /* ensures it stays above other content */
+    }
+
+    .add-bobspot-button {
+      background-color: #4CAF50; /* green */
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .add-bobspot-button:hover {
+      background-color: #45a049;
+    }
+
+    .content {
+      padding-top: 70px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Global Bobspots</h1>
+
+<div class="map-container">
+  <!-- Zoomed-out My Maps embed (set zoom to show full world) -->
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1-JkLlo99hWkeunFoBtmlerRdqXvdfls&ehbc=2E312F&noprof=1&ll=0,0&z=2"
+  allowfullscreen></iframe>
+</div>
+  <div class="header">
+    <a href="https://www.google.com/maps/d/u/0/edit?mid=1-JkLlo99hWkeunFoBtmlerRdqXvdfls&ll=0%2C0&z=2&place=bbb&description=bbb" target="_blank" class="add-bobspot-button">
+      Add Bobspot
+    </a>
+  </div>
+</body>
+</html>
