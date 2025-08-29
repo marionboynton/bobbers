@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title>Global Bobspots</title>
+  <title>Globe Bobbers' Bobspots</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -38,16 +38,17 @@
     }
 
     .header {
-        display: flex;
-      justify-content: flex-end; /* aligns button to the right */
-      padding: 16px;
-      background-color: #f2f2f2;
-      position: fixed; /* keeps it at the top even when scrolling */
-      top: 0;
-      right: 0;
-      left: 0;
-      z-index: 1000; /* ensures it stays above other content */
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* heading left, button right */
+  padding: 16px;
+  background-color: #f2f2f2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
 
     .add-bobspot-button {
       background-color: #4CAF50; /* green */
@@ -70,7 +71,7 @@
 </head>
 <body>
 
-<h1>Global Bobspots</h1>
+    <h1>Globe Bobbers' Bobspots</h1>
 
 <div class="map-container">
   <!-- Zoomed-out My Maps embed (set zoom to show full world) -->
@@ -78,6 +79,7 @@
   allowfullscreen></iframe>
 </div>
   <div class="header">
+    <h1 style="margin:0; flex-grow:1; font-size:40px;">Globe Bobbers' Bobspots</h1>
     <a href="https://www.google.com/maps/d/u/0/edit?mid=1-JkLlo99hWkeunFoBtmlerRdqXvdfls&ll=0%2C0&z=2&place=bbb&description=bbb" target="_blank" class="add-bobspot-button">
       Add Bobspot
     </a>
